@@ -50,6 +50,31 @@ nav ul li a {
   font-weight: bold;
 }
 
+/* 숨겨진 내용 기본 숨김 */
+.hidden-content {
+  display: none;
+  margin-top: 20px;
+  padding: 15px;
+  background: rgba(255,255,255,0.9);
+  color: #000;
+  border-radius: 8px;
+}
+
+.password-box {
+  margin: 10px 0;
+}
+
+.password-box input {
+  padding: 5px 10px;
+  font-size: 1rem;
+}
+
+.password-box button {
+  padding: 5px 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
 /* 섹션 아코디언 */
 section {
   margin-bottom: 30px;
