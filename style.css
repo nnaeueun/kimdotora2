@@ -119,6 +119,26 @@ section ul li .content {
   border-radius: 5px;
 }
 
+/*지도*/
+.map-container {
+  position: relative;
+  width: 100%;       /* 부모 컨테이너 폭 기준 */
+  padding-bottom: 56.25%; /* 16:9 비율 유지 (원하면 75%로 4:3 등 조절 가능) */
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px; /* 선택사항, 모서리 둥글게 */
+  margin: 10px 0;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 /* 푸터 */
 footer {
   text-align: center;
