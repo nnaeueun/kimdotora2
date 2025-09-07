@@ -19,11 +19,11 @@ header {
   padding: 30px 0;
 }
 
+/* 제목 깜빡이기 */
 header h1 {
-  font-size: 2rem;
-  animation: blink 1s infinite;
+  font-size: 4.4rem;
+  animation: blink 1s step-start infinite;
 }
-
 @keyframes blink {
   50% {
     opacity: 0;
