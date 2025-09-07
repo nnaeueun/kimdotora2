@@ -52,11 +52,9 @@ nav ul {
 
 nav ul li {
   position: relative;
-  padding-left: 20px;
 }
 
 nav ul li {
-5px 15px;
   list-style-type: square;  /* 리스트 기호를 촌스러운 네모 */
 }
 
