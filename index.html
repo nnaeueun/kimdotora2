@@ -6,9 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>쨍난도쿄여행</title>
 <link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
 </head>
-<body id="top">
-
+  
+<body id = '#top'>
+ <audio id="audioPlayer" controls loop autoplay>
+  <source src="에반게리온.mp3" type="audio/mpeg">
+ </audio>
+  
 <header>
   <h1>쨍♡난 도쿄 여행</h1>
 </header>
@@ -25,6 +30,34 @@
 </nav>
 
 <main>
+
+  <section id="day0">
+    <h2>항공/숙소</h2>
+    <!-- 비밀번호 입력창 -->
+    <div>
+      <input type="password" id="password" placeholder="비밀번호">
+      <button onclick="checkPassword()">확인</button>
+    </div>
+    <div id="secret">
+      <ul>
+        <li>항공
+          <div class="content">
+            <p>✈️ 인천(T2) → 나리타 / 9월 15일 월요일 08:15 출발</p>
+            <p>✈️ 나리타 → 인천(T2) / 9월 19일 금요일 19:05 출발</p>
+            <p>✈️비행기 예약 내역 : <a href="https://mail.google.com/mail/mu/mp/515/#cv/tokyovoucher/1988d167a6b8b844">링크</a></p>
+          </div>
+        </li>
+        <li>숙소
+          <div class="content">
+            <p>🏨 월,화,수 : 아사쿠사 에어비앤비</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103661.14071897719!2d139.72809185820313!3d35.716118000000016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ec1f4a38893%3A0xd3f6485878320561!2zMy1jaMWNbWUtMi0xIEFzYWt1c2EsIFRhaXRvIENpdHksIFRva3lvIDExMS0wMDMyIOydvOuzuA!5e0!3m2!1sko!2skr!4v1757074989190!5m2!1sko!2skr" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>🏨 수,목,금: 시부야 Hotel Will</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d207419.24212882234!2d139.570084328125!3d35.67883246763549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188caa2fdbf35d%3A0x8a3c21a6591ed9cb!2sHotel%20Will!5e0!3m2!1sko!2skr!4v1757075080521!5m2!1sko!2skr" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
 
   <section id="day1">
     <h2>9월 15일 (월)</h2>
@@ -98,6 +131,6 @@
   <p>© 만든이 : 김나은</p>
 </footer>
 
-<script src="script.js"></script>
+
 </body>
 </html>
