@@ -10,12 +10,13 @@ document.querySelectorAll("section ul li").forEach(function(li) {
 
 //비번 입력
 
-function checkPassword() {
+document.getElementById("passwordBtn").addEventListener("click", function() {
   const input = document.getElementById("password").value;
-  const content = document.getElementById("secret");
-  if (input === "1123") {  // master가 설정할 비밀번호
-    content.style.display = "block";
+  const secret = document.getElementById("secret");
+
+  if (input === "1123") {
+    secret.style.display = "block";
   } else {
     alert("비밀번호가 틀렸습니다.");
   }
-}
+});
