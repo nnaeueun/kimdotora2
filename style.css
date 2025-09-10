@@ -99,11 +99,11 @@ section h2 {
   color: #222;
   font-size: 1.5rem;
   text-align: left;
-  color: #66ccff;
+  color: #ccff33; /* 라임 계열 */
   text-shadow: 
-    0 0 2px #FF69B4,
-    0 0 5px #FF69B4,
-    0 0 10px #FF69B4;
+    0 0 2px #9900ff,
+    0 0 5px #9900ff,
+    0 0 10px #9900ff;
 }
 
 section ul {
