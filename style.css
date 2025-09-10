@@ -15,11 +15,11 @@ main {
 }
 
 a{
-  color: #ffff33; /* 노란 텍스트 */
+  color: #ff3399; /* 강렬한 핑크 */
   text-shadow: 
-    0 0 2px #ff3300,
-    0 0 5px #ff3300,
-    0 0 10px #ff3300;
+    0 0 2px #00ffff,
+    0 0 5px #00ffff,
+    0 0 10px #00ffff;
 }
 /* 헤더 */
 header {
