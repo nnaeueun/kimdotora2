@@ -92,6 +92,11 @@ section h2 {
   color: #222;
   font-size: 1.5rem;
   text-align: left;
+  color: #66ccff;
+  text-shadow: 
+    0 0 2px #FF69B4,
+    0 0 5px #FF69B4,
+    0 0 10px #FF69B4;
 }
 
 section ul {
