@@ -15,11 +15,11 @@ main {
 }
 
 a{
-  color: #cc33ff;
-  text-shadow:
-    0 0 2px #ff99ff,
-    0 0 5px #ff99ff,
-    0 0 10px #ff99ff;
+  color: #ffff33; /* 노란 텍스트 */
+  text-shadow: 
+    0 0 2px #ff3300,
+    0 0 5px #ff3300,
+    0 0 10px #ff3300;
 }
 /* 헤더 */
 header {
