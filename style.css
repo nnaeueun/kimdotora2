@@ -6,6 +6,8 @@ body {
   margin: 0;
   padding: 0;
   color: #fff;
+  background-image: url('main/img2.jpeg');
+  background-repeat : repeat;
 }
 
 main {
