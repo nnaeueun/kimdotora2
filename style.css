@@ -2,7 +2,6 @@
 
 /* 기본 스타일 */
 body {
-  #year-2025 {
     font-family: 'Gulim', 'Gulim', sans-serif;
     background: #f0f0f0;
     margin: 0;
@@ -10,7 +9,6 @@ body {
     color: #fff;
     background-image: url('main/img2.jpeg');
     background-repeat : repeat;
-  }
 }
 
 main {
