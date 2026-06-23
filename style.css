@@ -1,1 +1,188 @@
 
+
+/* 기본 스타일 */
+body {
+  #year-2025 {
+    font-family: 'Gulim', 'Gulim', sans-serif;
+    background: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-image: url('main/img2.jpeg');
+    background-repeat : repeat;
+  }
+}
+
+main {
+  padding: 20px 10%;
+}
+
+a{
+  color: #ff3399; /* 강렬한 핑크 */
+  text-shadow: 
+    0 0 2px #00ffff,
+    0 0 5px #00ffff,
+    0 0 10px #00ffff;
+}
+/* 헤더 */
+header {
+  text-align: center;
+  background-image: url('main/img1.jpg');
+  padding: 30px 0;
+  color: #66ccff;
+  text-shadow: 
+    0 0 2px #FF69B4,
+    0 0 5px #FF69B4,
+    0 0 10px #FF69B4;
+}
+
+/* 제목 깜빡이기 */
+header h1 {
+  font-size: 4.4rem;
+  animation: blink 1s step-start infinite;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* 네비게이션 */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: rgba(0, 0, 0, 0.2); /* 투명+어두운 배경 */
+}
+
+nav ul li {
+  margin: 5px 15px;
+  list-style-type: square;  /* 리스트 기호를 촌스러운 네모 */
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* 숨겨진 내용 기본 숨김 */
+.hidden-content {
+  display: none;
+  margin-top: 20px;
+  padding: 15px;
+  background: rgba(255,255,255,0.9);
+  color: #000;
+  border-radius: 8px;
+}
+
+.password-box {
+  margin: 10px 0;
+}
+
+.password-box input {
+  padding: 5px 10px;
+  font-size: 1rem;
+}
+
+.password-box button {
+  padding: 5px 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* 섹션 아코디언 */
+section {
+  margin-bottom: 30px;
+}
+
+section h2 {
+  margin-bottom: 10px;
+  color: #222;
+  font-size: 1.5rem;
+  text-align: left;
+  color: #ccff33; /* 라임 계열 */
+  text-shadow: 
+    0 0 2px #9900ff,
+    0 0 5px #9900ff,
+    0 0 10px #9900ff;
+}
+
+section ul {
+  background: rgba(50,50,50,0.8);
+  padding: 15px 20px;
+  border-radius: 8px;
+  list-style: none;
+}
+
+section ul li {
+  position: relative;
+  margin: 5px 0;
+  padding-left: 25px;
+  cursor: pointer;
+}
+
+section ul li::before {
+  content: "▶";
+  position: absolute;
+  left: 0;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+img {
+  max-width: 100%;       /* 부모 폭 기준으로 크기 자동 조절 */
+  height: auto;          /* 비율 유지 */
+}
+
+/* 숨겨진 내용 */
+section ul li .content {
+  display: none;
+  margin-top: 5px;
+  padding: 10px;
+  background: rgba(200,200,200,0.9);
+  color: #000;
+  border-radius: 5px;
+}
+
+/*지도*/
+.map-container {
+  position: relative;
+  width: 100%;       /* 부모 컨테이너 폭 기준 */
+  padding-bottom: 56.25%; /* 16:9 비율 유지 (원하면 75%로 4:3 등 조절 가능) */
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px; /* 선택사항, 모서리 둥글게 */
+  margin: 10px 0;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* 푸터 */
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #222;
+  color: #fff;
+}
+
+/* 반응형 */
+@media (max-width: 600px) {
+  main {
+    padding: 20px 5%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
