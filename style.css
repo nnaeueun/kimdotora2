@@ -171,6 +171,50 @@ footer {
   box-shadow: inset 0 15px 30px rgba(255, 255, 255, 0.2);
 }
 
+/* 비눗방울 기본 스타일 */
+.dream-bubble {
+    position: absolute;
+    bottom: -100px; /* 화면 밑바닥 아래쪽에서 출발 */
+    background-image: url('main/bubble.png'); /* 올리신 비눗방울 이미지 경로 */
+    background-size: cover;
+    pointer-events: none; /* ★중요: 방울 때문에 버튼 클릭이 안 되는 현상 방지 */
+    z-index: 10;
+    
+    /* [★핵심] 만약 이미지 배경이 검은색일 때, 검은색만 투명하게 날려버리는 마법의 속성 */
+    mix-blend-mode: screen; 
+    
+    /* 떠오르는 애니메이션과 좌우로 흔들리는 애니메이션을 동시 적용 */
+    animation: floatUp 7s linear infinite, wobble 3s ease-in-out infinite;
+}
+
+/* 위로 둥둥 떠오르면서 투명해지는 애니메이션 */
+@keyframes floatUp {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.8; /* 서서히 나타남 */
+    }
+    90% {
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(-120vh); /* 화면 위쪽 바깥까지 상승 */
+        opacity: 0; /* 완전히 소멸 */
+    }
+}
+
+/* 인스타 피드 감성 + 드림코어 특유의 갈지자로 흐느적거리는 좌우 흔들림 */
+@keyframes wobble {
+    0%, 100% {
+        margin-left: 0px;
+    }
+    50% {
+        margin-left: 40px; /* 오른쪽으로 스르륵 밀렸다가 제자리로 */
+    }
+}
+
 /* 반응형 */
 @media (max-width: 600px) {
   main {
