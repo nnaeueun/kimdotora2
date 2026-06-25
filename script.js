@@ -26,7 +26,7 @@ document.getElementById("passwordBtn").addEventListener("click", function() {
 function createBubble() {
     // 작년 구역인 #year-2025 내부에 방울을 스폰합니다.
     // 만약 페이지 전체에 띄우고 싶다면 'year-2025' 대신 'year-2026' 혹은 document.body를 쓰셔도 됩니다.
-    const section = document.getElementById('year-2025'); 
+    const section = document.getElementById(document.body); 
     if (!section) return;
 
     const bubble = document.createElement('span');
