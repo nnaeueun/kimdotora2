@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
     color: #fff;
-    background-image: url('main/yogi.jpg');
+    background-image: url('main/dreamcore.jpg');
     background-repeat : repeat;
 }
 
@@ -25,7 +25,7 @@ a{
 /* 헤더 */
 header {
   text-align: center;
-  background-image: url('main/cttro.jpeg');
+  background-image: url('main/yogi.jpg');
   padding: 30px 0;
   color: #66ccff;
   text-shadow: 
