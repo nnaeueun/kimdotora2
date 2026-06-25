@@ -126,7 +126,7 @@ section ul li::before {
   content: "▶";
   position: absolute;
   left: 0;
-  color: #fff;
+  color: rgba(225, 225, 225, 0.45);
   font-size: 0.9rem;
 }
 
