@@ -10,7 +10,7 @@ body {
     background-image: url('main/dreamcore.jpg');
     background-repeat : repeat;
     
-    /* [★추가] 방울들이 엇나가지 않게 꽉 잡아주는 기준점벽을 세웁니다 */
+    /* 비눗방울*/
     position: relative;
     overflow-x: hidden; /* 방울이 우측으로 흔들릴 때 가로 스크롤바 생기는 것 차단 */
 }
