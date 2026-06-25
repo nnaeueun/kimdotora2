@@ -140,7 +140,7 @@ section ul li .content {
   display: none;
   margin-top: 5px;
   padding: 10px;
-  background: rgba(200,200,200,0.9);
+  background: rgba(225, 225, 225, 0.45);
   color: #000;
   border-radius: 5px;
 }
