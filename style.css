@@ -109,7 +109,7 @@ section h2 {
 }
 
 section ul {
-  background: rgba(50,50,50,0.8);
+  background: rgba(110, 95, 130, 0.6);
   padding: 15px 20px;
   border-radius: 8px;
   list-style: none;
@@ -169,7 +169,7 @@ section ul li .content {
 footer {
   text-align: center;
   padding: 10px;
-  background: #222;
+  background: #C4D4E1;
   color: #fff;
 }
 
