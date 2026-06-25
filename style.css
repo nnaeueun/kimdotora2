@@ -52,7 +52,7 @@ nav ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background: rgba(60, 80, 50, 0.35); /* 투명35+반투명올리브그 */
+  background: rgba(45, 35, 55, 0.4);
 }
 
 nav ul li {
