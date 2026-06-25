@@ -9,6 +9,10 @@ body {
     color: #fff;
     background-image: url('main/dreamcore.jpg');
     background-repeat : repeat;
+    
+    /* [★추가] 방울들이 엇나가지 않게 꽉 잡아주는 기준점벽을 세웁니다 */
+    position: relative;
+    overflow-x: hidden; /* 방울이 우측으로 흔들릴 때 가로 스크롤바 생기는 것 차단 */
 }
 
 main {
@@ -173,17 +177,14 @@ footer {
 
 /* 비눗방울 기본 스타일 */
 .dream-bubble {
-    position: absolute;
-    bottom: -100px; /* 화면 밑바닥 아래쪽에서 출발 */
-    background-image: url('main/bubble.png'); /* 올리신 비눗방울 이미지 경로 */
+    position: fixed; 
+    bottom: -100px; 
+    background-image: url('main/bubble.png');     
     background-size: cover;
-    pointer-events: none; /* ★중요: 방울 때문에 버튼 클릭이 안 되는 현상 방지 */
-    z-index: 10;
-    
-    /* [★핵심] 만약 이미지 배경이 검은색일 때, 검은색만 투명하게 날려버리는 마법의 속성 */
+    pointer-events: none; 
+    z-index: 9999; /* 다른 섹션 상자(rgba) 뒤로 숨지 않도록 맨 위로 올림 */
     mix-blend-mode: screen; 
     
-    /* 떠오르는 애니메이션과 좌우로 흔들리는 애니메이션을 동시 적용 */
     animation: floatUp 7s linear infinite, wobble 3s ease-in-out infinite;
 }
 
