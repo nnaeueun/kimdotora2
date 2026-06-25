@@ -21,12 +21,10 @@ document.getElementById("passwordBtn").addEventListener("click", function() {
   }
 });
 
-// 3. 신규 기능: 드림코어 비눗방울 무한 생성 (★여기서부터 추가됨)
+// 비눗방울 무한 생성
 // ==========================================
 function createBubble() {
-    // 작년 구역인 #year-2025 내부에 방울을 스폰합니다.
-    // 만약 페이지 전체에 띄우고 싶다면 'year-2025' 대신 'year-2026' 혹은 document.body를 쓰셔도 됩니다.
-    const section = document.getElementById(document.body); 
+    const section = document.body; 
     if (!section) return;
 
     const bubble = document.createElement('span');
@@ -52,5 +50,5 @@ function createBubble() {
     }, 8000);
 }
 
-// 웹사이트가 켜지면 0.5초(500ms)마다 주기적으로 createBubble 함수를 실행해서 방울을 계속 공급함
-setInterval(createBubble, 500);
+// 웹사이트가 켜지면 0.7초마다 주기적으로 createBubble 함수를 실행해서 방울을 계속 공급함
+setInterval(createBubble, 700);
