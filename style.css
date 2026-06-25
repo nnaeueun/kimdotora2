@@ -71,7 +71,7 @@ nav ul li a {
   display: none;
   margin-top: 20px;
   padding: 15px;
-  background: rgba(255,255,255,0.9);
+  background: rgba(225, 225, 225, 0.45);
   color: #000;
   border-radius: 8px;
 }
@@ -126,7 +126,7 @@ section ul li::before {
   content: "▶";
   position: absolute;
   left: 0;
-  color: rgba(225, 225, 225, 0.45);
+  color: #fff;
   font-size: 0.9rem;
 }
 
