@@ -47,12 +47,12 @@ header h1 {
 
 /* 네비게이션 */
 nav ul {
-  list-style: none;
-  padding: 0;
+  /* [수정] 위아래 여백은 유지하되, 왼쪽(ul 내부)에 확실하게 30px의 여백을 줍니다 */
+  padding: 10px 0 10px 30px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background: rgba(0, 0, 0, 0.2); /* 투명+어두운 배경 */
+  background: rgba(60, 80, 50, 0.35); /* 투명35+반투명올리브그 */
 }
 
 nav ul li {
