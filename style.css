@@ -166,10 +166,13 @@ section ul li .content {
 
 /* 푸터 */
 footer {
+  background-color: rgba(135, 155, 115, 0.65); 
+  padding: 45px 0;
   text-align: center;
-  padding: 10px;
-  background: #C4D4E1;
-  color: #fff;
+        
+        /* 잔디밭의 질감이 자연스럽게 뭉개지도록 상단에 부드러운 안개 효과 추가 */
+  box-shadow: inset 0 15px 30px rgba(255, 255, 255, 0.2);
+  border-top: 1px dashed rgba(255, 255, 255, 0.3);
 }
 
 /* 반응형 */
