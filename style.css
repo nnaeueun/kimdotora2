@@ -216,6 +216,14 @@ footer {
     }
 }
 
+.instagram-media {
+    min-width: 0 !important;       /* 인스타 고유의 326px 제한을 완전히 무력화 */
+    max-width: 100% !important;    /* 부모인 반투명 회색 박스 폭을 절대 넘지 못하게 함 */
+    width: 100% !important;        /* 부모 상자 가로 폭에 가득 채우기 */
+    margin: 15px auto !important;  /* 좌우 마진 auto로 상자 안에서 정중앙 배치 */
+    box-shadow: none !important;   /* 드림코어 무드를 위해 인스타 자체 흰색 그림자 제거 (선택) */
+}
+
 /* 반응형 */
 @media (max-width: 600px) {
   main {
