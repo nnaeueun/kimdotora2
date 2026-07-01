@@ -224,6 +224,14 @@ footer {
     box-shadow: none !important;   /* 드림코어 무드를 위해 인스타 자체 흰색 그림자 제거 (선택) */
 }
 
+iframe[src*="google.com"] {
+    width: 100% !important;        /* HTML에 적힌 width="400" 무력화하고 부모 폭에 맞춤 */
+    max-width: 100% !important;    /* 부모 상자 가로 폭을 절대 넘지 못하게 차단 */
+    height: 300px !important;      /* 모바일 스크린 비율에 맞게 적당한 높이 지정 (원하는 높이로 수정 가능) */
+    border-radius: 8px !important; /* 이미지 속 다른 요소들과 무드를 맞추기 위한 모서리 곡률 */
+    margin: 15px auto !important;  /* 인스타 미디어와 동일하게 위아래 여백 및 중앙 정렬 */
+}
+
 /* 반응형 */
 @media (max-width: 600px) {
   main {
